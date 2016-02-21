@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>WikipediaJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../lib/wikipedia.js"></script>
+  </head>
+  
+  <body>
+    <h2>Use Wikipedia API</h2>
+    <form id="search">
+      <input id="query" type="text" placeholder="Enter query here" />
+      <input type="submit" value="Search" />
+    </form>
+    <script>
+      $("#search").on('submit', function(e) {
+        e.preventDefault();
+        var query = $("input#query").val();
+        wikipedia(query,function(status, data){
+          $("#content").html(data);
+        });
+      });
+    </script>
+    <div id="content"></div>
+  </body>
+
+</html>
