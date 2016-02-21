@@ -1,0 +1,17 @@
+{
+  "name": "WikipediaJs",
+  "authors": [
+    "Toni <toni.edward@outlook.com>"
+  ],
+  "description": "A javascript library for the wikipedia api",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "wikipedia",
+    "mediawiki",
+    "wiki"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {}
+}
